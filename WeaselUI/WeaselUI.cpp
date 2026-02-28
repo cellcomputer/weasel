@@ -162,8 +162,8 @@ void UI::UpdateInputPosition(RECT const& rc) {
 }
 
 void UI::Update(const Context& ctx, const Status& status) {
-  if (ctx.cinfo.candies.empty()) 
-  {    Hide();
+  if (ctx.cinfo.candies.empty()) {
+    Hide();
     return;
   }
   if (ctx_ == ctx && status_ == status)
@@ -181,5 +181,3 @@ void UI::Update(const Context& ctx, const Status& status) {
   }
   Refresh();
 }
-
-
